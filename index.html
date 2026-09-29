@@ -1,0 +1,41 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+    <!-- %SEO% values below are injected from src/data/siteData.ts at build/dev time (see vite.config.ts) -->
+    <title>%SEO_TITLE%</title>
+    <meta name="description" content="%SEO_DESCRIPTION%" />
+    <meta name="theme-color" content="#0d0c0b" />
+    <link rel="icon" type="%SEO_FAVICON_TYPE%" href="%SEO_FAVICON%" />
+    <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
+    <link rel="canonical" href="%SEO_URL%" />
+
+    <meta property="og:type" content="website" />
+    <meta property="og:site_name" content="%SEO_NAME%" />
+    <meta property="og:title" content="%SEO_TITLE%" />
+    <meta property="og:description" content="%SEO_DESCRIPTION%" />
+    <meta property="og:url" content="%SEO_URL%" />
+    <meta property="og:image" content="%SEO_OG_IMAGE%" />
+    <meta property="og:locale" content="%SEO_LOCALE%" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="%SEO_TITLE%" />
+    <meta name="twitter:description" content="%SEO_DESCRIPTION%" />
+    <meta name="twitter:image" content="%SEO_OG_IMAGE%" />
+
+    <link rel="preload" as="image" href="%SEO_HERO_IMAGE%" fetchpriority="high" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;1,300;1,400&family=Manrope:wght@400;500;600&display=swap"
+      rel="stylesheet"
+    />
+
+    <script type="application/ld+json">%SEO_JSONLD%</script>
+  </head>
+  <body>
+    <div id="root"></div>
+    <noscript>%SEO_NAME% — %SEO_DESCRIPTION%</noscript>
+    <script type="module" src="/src/main.tsx"></script>
+  </body>
+</html>
